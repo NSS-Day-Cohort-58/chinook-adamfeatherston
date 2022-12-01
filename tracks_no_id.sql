@@ -7,16 +7,3 @@ JOIN MediaType
 JOIN Genre
     ON Track.GenreId = Genre.GenreId;
 
-
-
-
-INNER JOIN Customer
-    ON Employee.EmployeeId = Customer.SupportRepId
-INNER JOIN Invoice
-    ON Customer.CustomerId = Invoice.CustomerId;
-
-
--- Provide a query that shows all the Tracks, but displays no IDs. The resultant table should include:
--- Album name
--- Media type
--- Genre
