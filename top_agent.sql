@@ -4,8 +4,7 @@ JOIN Customer
     ON Invoice.CustomerId = Customer.CustomerId
 JOIN Employee
     ON Customer.SupportRepId = Employee.EmployeeId
-WHERE InvoiceDate LIKE "%2009%"
 GROUP BY Employee.EmployeeId
-ORDER BY Max(Invoice.Total) DESC
+ORDER BY Max(Invoice.Total) ASC
 LIMIT 1;
 
